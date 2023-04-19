@@ -43,12 +43,12 @@ body {
   width: 500px;  
 }
 
-ul {
+.task-list {
   margin: 0;
   padding: 0px;
 }
 
-li {
+.task-list__item {
   list-style: none;
 }
 
@@ -87,6 +87,7 @@ button {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
+  width: 226px;
   height: 21px;
   padding: 0 9px;
   border: 1px solid #dDd;
@@ -101,7 +102,7 @@ button {
 }
 
 /* New Task */
-label.form__heading {
+.form__heading-label {
   margin: 0 0 20px;
 }
 
@@ -120,19 +121,15 @@ label.form__heading {
   vertical-align: middle;
 }
 
-.task-list__item .form__checkbox {
+.form__checkbox {
   margin: 0 10px;
 }
 
-.task-list__item-label {
+.task-list__item-name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-}
-
-.task-list__item .form__input {
-  width: 226px
 }
 
 .form__icon_delete {
@@ -146,7 +143,7 @@ label.form__heading {
 }
 
 /* Completed */
-.form__completed-tasks .task-list__item-label {
+.form__completed-tasks .task-list__item-name {
   text-decoration: line-through;
   color: #888;
 }
@@ -161,6 +158,6 @@ label.form__heading {
   width: 224px
 }
 
-.form__edit-mode label {
+.form__edit-mode .task-list__item-name {
   display: none;
 }

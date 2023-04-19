@@ -44,7 +44,7 @@ var createNewTaskElement = function (taskString) {
       deleteButtonImg.classList.add('form__icon_delete');//delete button image
 
   label.innerText = taskString;
-  label.className = "flex-grow-1";
+  label.className = "task-list__item-name flex-grow-1 js-label";
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
