@@ -124,7 +124,7 @@ label.form__heading {
   margin: 0 10px;
 }
 
-.task-list__item_label {
+.task-list__item-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -146,7 +146,7 @@ label.form__heading {
 }
 
 /* Completed */
-.form__completed-tasks .task-list__item_label {
+.form__completed-tasks .task-list__item-label {
   text-decoration: line-through;
   color: #888;
 }
