@@ -10,38 +10,38 @@
 
 var taskInput = document.querySelector(".js-add-task");//Add a new task.
 var addButton = document.querySelector(".js-add-btn");//first button
-var incompleteTaskHolder = document.querySelector('.js-incompleted-tasks');//ul of #incompleteTasks
-var completedTasksHolder = document.querySelector('.js-completed-tasks');//completed-tasks
+var incompleteTaskHolder = document.querySelector(".js-incompleted-tasks");//ul of #incompleteTasks
+var completedTasksHolder = document.querySelector(".js-completed-tasks");//completed-tasks
 
 
 //New task list item
 var createNewTaskElement = function (taskString) {
 
   var listItem = document.createElement("li");
-      listItem.classList.add('task-list__item');
+      listItem.classList.add("task-list__item");
 
   //input (checkbox)
   var checkBox = document.createElement("input");
-      checkBox.classList.add('form__checkbox');//checkbx
+      checkBox.classList.add("form__checkbox");//checkbx
   //label
   var label = document.createElement("label");//label
   //input (text)
   var editInput = document.createElement("input");
-      editInput.classList.add('flex-grow-1');
-      editInput.classList.add('form__input');
-      editInput.classList.add('js-input');
+      editInput.classList.add("flex-grow-1");
+      editInput.classList.add("form__input");
+      editInput.classList.add("js-input");
   //button.edit
   var editButton = document.createElement("button");
-      editButton.classList.add('form__btn');
-      editButton.classList.add('js-edit-btn');//edit button
+      editButton.classList.add("form__btn");
+      editButton.classList.add("js-edit-btn");//edit button
 
   //button.delete
   var deleteButton = document.createElement("button");
-      deleteButton.classList.add('form__btn');
-      deleteButton.classList.add('form__btn_delete');
-      deleteButton.classList.add('js-delete-btn');//delete button
+      deleteButton.classList.add("form__btn");
+      deleteButton.classList.add("form__btn_delete");
+      deleteButton.classList.add("js-delete-btn");//delete button
   var deleteButtonImg = document.createElement("img");
-      deleteButtonImg.classList.add('form__icon_delete');//delete button image
+      deleteButtonImg.classList.add("form__icon_delete");//delete button image
 
   label.innerText = taskString;
   label.className = "task-list__item-name flex-grow-1 js-label";
@@ -56,6 +56,7 @@ var createNewTaskElement = function (taskString) {
 
   deleteButton.className = "form__btn form__btn_delete js-delete-btn";
   deleteButtonImg.src = "./remove.svg";
+  deleteButtonImg.setAttribute("alt","Delete icon");
   deleteButton.appendChild(deleteButtonImg);
 
 
